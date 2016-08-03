@@ -1,0 +1,31 @@
+Test1
+$foo$foo$12.45$$foo
+Test2
+${foo}
+Test3
+@foo
+Test4
+$
+
+$foo
+$foo({
+    Hello World
+})
+
+${foo({
+
+}) + foo({
+    Foobar
+})}
+
+$sys:import('')
+$sys:import('')
+$html:form (foo (bar) non) {
+}
+
+${foreach () [] {}}
+
+
+test1.str
+
+

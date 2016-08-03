@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "mappings": {
+        "ext/": [
+          "../ACMESharp.Vault.Ext.Firebase/bin/Debug/netstandard1.6/ACMESharp.Vault.Ext.Firebase.dll"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "ACMESharp": {
+      "target": "project"
+    },
+    "ACMESharp.Vault": {
+      "target": "project"
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
+      "imports": "portable-net45+win8"
+    }
+  }
+}

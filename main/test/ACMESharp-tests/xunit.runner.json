@@ -1,0 +1,11 @@
+{
+    // Place CLI configuration items here
+    // Valid configuration items can be found at:
+    //    http://xunit.github.io/docs/configuring-with-json.html#items
+
+    "diagnosticMessages": true,
+    "xunit.diagnosticMessages": true,
+
+    "maxParallelThreads": 1, // Default = number of logical CPUs in PC
+    "parallelizeTestCollections": false // Default = true
+}

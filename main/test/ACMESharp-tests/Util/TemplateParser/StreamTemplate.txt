@@ -1,0 +1,16 @@
+
+
+x + y   => Core.Plus(Token x, Token y)
+x - y   => Core.Minus(Token x, Token y)
+x * y   => Core.Times(Token x, Token y)
+x / y   => Core.Divide(Token x, Token y)
+x % y   => Core.Modulus(Token x, Token y)
+x ^ y   => Core.Raise(Token x, Tokeny)
+x & & y  => Core.And(Token x, Token y)
+x , y   => Core.Array(x, y)
+x . . y    => Core.Range(x, y)
+
+x in y  => Core.ForEach(Symbol x, Token y)
+x | | y  => Core.Or(Token x, Token y)
+
+
