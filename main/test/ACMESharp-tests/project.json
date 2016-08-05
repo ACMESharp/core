@@ -24,6 +24,7 @@
     "System.Runtime.Serialization.Primitives": "4.1.1",
     "xunit": "2.1.0",
     "dotnet-test-xunit": "1.0.0-rc2-192208-24",
+    "Newtonsoft.Json.NetCore": "9.0.2",
     "ACMESharp": {
       "target": "project"
     }
@@ -32,6 +33,8 @@
   "frameworks": {
     "netcoreapp1.0": {
       "dependencies": {
+        "System.Security.Cryptography.Primitives": "4.0.0",
+        "System.Security.Cryptography.Cng": "4.2.0",
         "Microsoft.NETCore.App": {
           "type": "platform",
           "version": "1.0.0"
