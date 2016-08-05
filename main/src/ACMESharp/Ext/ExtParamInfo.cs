@@ -6,8 +6,17 @@ namespace ACMESharp.Ext
     /// </summary>
     public enum ExtParamType
     {
+        /// <summary>
+        /// Single-line string (no CR/LF).
+        /// </summary>
         STRING = 0x1,
+        /// <summary>
+        /// Signed integer (i.e. Int32).
+        /// </summary>
         NUMBER = 0x2,
+        /// <summary>
+        /// Boolean value.
+        /// </summary>
         BOOLEAN = 0x3,
 
         /// <summary>

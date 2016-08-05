@@ -72,8 +72,8 @@ namespace ACMESharp.Ext
 
             foreach (var pi in paramInfos)
             {
-                object val;
-                if (!paramVals.TryGetValue(pi.Name, out val))
+                object val = null;
+                if (!(paramVals?.TryGetValue(pi.Name, out val)).GetValueOrDefault())
                 {
                     if (pi.IsRequired)
                         throw new ArgumentNullException(pi.Name,
@@ -90,7 +90,7 @@ namespace ACMESharp.Ext
                                 val = (string)val;
                                 break;
                             case ExtParamType.NUMBER:
-                                val = (long)val;
+                                val = (int)val;
                                 break;
                             case ExtParamType.BOOLEAN:
                                 val = (bool)val;
