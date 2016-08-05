@@ -7,7 +7,8 @@ using Xunit.Abstractions;
 
 namespace ACMESharp.Util
 {
-    public class ExpressionParserTests
+    //public
+    class ExpressionParserTests
     {
         private readonly ITestOutputHelper _out;
         private readonly Action<string> _outWriter;
