@@ -15,8 +15,20 @@ namespace ACMESharp.Proto.Resources
         public string Status
         { get; set; }
         
-        [DataMember(Name = "Ctatus")]
+        [DataMember(Name = "contact")]
         public IEnumerable<string> Contact
+        { get; set; }
+        
+        [DataMember(Name = "agreement")]
+        public string Agreement
+        { get; set; }
+        
+        [DataMember(Name = "applications")]
+        public string Applications
+        { get; set; }
+        
+        [DataMember(Name = "certificates")]
+        public string Certificates
         { get; set; }
         
     }
