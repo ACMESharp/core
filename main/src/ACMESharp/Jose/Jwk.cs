@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using ACMESharp.Json;
 
 namespace ACMESharp.Jose
 {

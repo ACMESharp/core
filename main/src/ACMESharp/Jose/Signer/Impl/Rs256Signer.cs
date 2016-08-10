@@ -21,7 +21,7 @@ namespace ACMESharp.Jose.Signer.Impl
             Params = new SignerParams();
         }
 
-        public Rs256Signer(SignerParams @params)
+        private Rs256Signer(SignerParams @params)
         {
             Params = @params;
         }
