@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ACMESharp.Jose
+namespace ACMESharp.Json
 {
     public class ExtensibleEntity
     {
@@ -9,7 +9,11 @@ namespace ACMESharp.Jose
 
             public object this[string key]
             {
-                get { return _extData?[key]; }
+                get
+                {
+                     return _extData?[key];
+                }
+                
                 set
                 {
                     if (_extData == null)

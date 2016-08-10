@@ -5,7 +5,7 @@ using ACMESharp.Jose;
 namespace ACMESharp.Proto.Resources
 {
     [DataContract]
-    public class Registration : ExtensibleResource
+    public class Registration : Resource
     {
         [DataMember(Name = "key")]
         public Jwk Key

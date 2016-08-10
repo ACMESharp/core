@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using ACMESharp.Json;
 
 namespace ACMESharp.Proto.Resources
 {
@@ -33,7 +34,7 @@ namespace ACMESharp.Proto.Resources
         { get; set; }
 
         [DataContract]
-        public class DirectoryMeta : ExtensibleResource
+        public class DirectoryMeta : ExtensibleEntity
         {
             [DataMember(Name = "terms-of-service")]
             public string TermsOfService
