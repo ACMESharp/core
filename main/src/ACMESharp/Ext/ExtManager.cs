@@ -5,6 +5,7 @@ using System.Composition.Hosting;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 
 namespace ACMESharp.Ext
 {
@@ -21,6 +22,8 @@ namespace ACMESharp.Ext
         where E : IExtension
         where EP : IExtProvider<E>
     {
+        private static readonly ILogger LOG = LogManager.GetLogger<ExtManager<E, EP>>();
+
         private List<Assembly> _BuiltInAssemblies = new List<Assembly>();
 
         private EP[] _foundProviders = null;
